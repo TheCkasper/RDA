@@ -270,16 +270,12 @@
         <span></span>
         <span></span>
 
-
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('error')) {
-                alert(urlParams.get('error'));
-            }
-        });
-    </script>
         <div class="signin">
+        <?php
+    if(isset($_GET['error'])) {
+        echo "<p style='color: white'>Error: ".$_GET['error']."</p>";
+    }
+    ?>
             <div class="content">
                 <h2>Inicia Sesión</h2>
                 <div class="form">
@@ -296,19 +292,22 @@
                     </div>
                     <br>
                     <div class="links">
-                        <a href="#">¿Olvidaste la Constraseña?</a>
+                        <a href="contraolvidada.php">¿Olvidaste la Constraseña?</a>
                         <a href="registrousuario.php">Registrate</a>
                     </div>
                     <br>
                     <div class="inputBox">
                         <input type="submit" value="Iniciar">
-                    </div>
+                        
+                    </div>   
+                        
                     </form>
                     
                 </div>
             </div>
         </div>
     </section>
+
     
 </body>
 </html>
