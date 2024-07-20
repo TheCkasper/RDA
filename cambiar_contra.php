@@ -23,7 +23,11 @@
 </head>
 
 <body class="hold-transition sidebar-mini">
-
+<?php
+    if(isset($_GET['error'])) {
+        echo "<p style='color: white'>Error: ".$_GET['error']."</p>";
+    }
+    ?>
     <?php
         session_start();
         
