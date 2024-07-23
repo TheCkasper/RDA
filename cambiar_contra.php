@@ -117,6 +117,12 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
+                                    <a href="notas.php" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Notas estudiantes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
                                     <a href="cambio.php" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cambiar Contraseña</p>

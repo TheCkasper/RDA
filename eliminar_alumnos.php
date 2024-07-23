@@ -11,5 +11,6 @@ $direccion = $_POST['direccion'];
 $grado = $_POST['grado'];
 $carrera = $_POST['carrera'];
 $sql = $conn -> query("DELETE FROM alumno WHERE id= '$id' ");
+$sql1 = $conn -> query("DELETE FROM notas WHERE fk_id_alumno= '$id' ");
 header('Location:interfaz.php');
 ?>
